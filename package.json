@@ -1,0 +1,51 @@
+{
+  "_from": "@types/nodegit",
+  "_id": "@types/nodegit@0.18.7",
+  "_inBundle": false,
+  "_integrity": "sha512-fanWL/CbtMU7ol0OPecr6nl7ZVS/NTHcrr/ru2iIxyRtwfrnL/tDmj+soMHeRBZg3IMPxwcDJHreQH9Q0TN3Gg==",
+  "_location": "/@types/nodegit",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "@types/nodegit",
+    "name": "@types/nodegit",
+    "escapedName": "@types%2fnodegit",
+    "scope": "@types",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/@types/nodegit/-/nodegit-0.18.7.tgz",
+  "_shasum": "3f39fb0b1215c267b7de1f6ed72a80880364a466",
+  "_spec": "@types/nodegit",
+  "_where": "/Users/honey/projects",
+  "bundleDependencies": false,
+  "contributors": [
+    {
+      "name": "Dolan Miu",
+      "url": "https://github.com/dolanmiu"
+    }
+  ],
+  "dependencies": {
+    "@types/events": "*",
+    "@types/node": "*"
+  },
+  "deprecated": false,
+  "description": "TypeScript definitions for nodegit",
+  "license": "MIT",
+  "main": "",
+  "name": "@types/nodegit",
+  "repository": {
+    "type": "git",
+    "url": "https://www.github.com/DefinitelyTyped/DefinitelyTyped.git"
+  },
+  "scripts": {},
+  "typeScriptVersion": "2.0",
+  "typesPublisherContentHash": "ffebd92d772a884311dd49970833e8e776c173166bd33087fa0e4d31101099e1",
+  "version": "0.18.7"
+}
