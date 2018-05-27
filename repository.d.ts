@@ -34,6 +34,18 @@ export interface RepositoryInitOptions {
     workdirPath: string;
 }
 
+export namespace Repository {
+    enum INIT_FLAG {
+        BARE = 1,
+        NO_REINIT = 2,
+        NO_DOTGIT_DIR = 4,
+        MKDIR = 8,
+        MKPATH = 16,
+        EXTERNAL_TEMPLATE = 32,
+        RELATIVE_GITLI = 64,
+    }
+}
+
 export class Repository {
     /**
      * Creates a branch with the passed in name pointing to the commit
