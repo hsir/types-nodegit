@@ -5,6 +5,6 @@ export class DiffDelta {
     flags: number;
     similarity: number;
     nfiles: number;
-    oldFile: DiffFile;
-    newFile: DiffFile;
+    oldFile(): DiffFile;
+    newFile(): DiffFile;
 }
