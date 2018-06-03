@@ -13,6 +13,6 @@ export namespace RebaseOperation {
 
 export class RebaseOperation {
     type: number;
-    id: Oid;
+    id(): Oid;
     exec: string;
 }
