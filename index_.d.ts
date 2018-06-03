@@ -33,7 +33,11 @@ export class Index {
     clear(): number;
     conflictAdd(ancestorEntry: IndexEntry, ourEntry: IndexEntry, theirEntry: IndexEntry): number;
     conflictCleanup(): number;
-    conflictGet(path: string): Promise<IndexEntry>;
+    conflictGet(path: string): Promise<{
+        ancestor_out: IndexEntry;
+        our_out: IndexEntry;
+        their_out: IndexEntry;
+    }>;
     conflictRemove(path: string): number;
     entryCount(): number;
     getByIndex(n: number): IndexEntry;
