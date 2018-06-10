@@ -17,5 +17,5 @@ export class IndexEntry {
     id: Oid;
     flags: number;
     flagsExtended: number;
-    path: string;
+    path(): string;
 }
