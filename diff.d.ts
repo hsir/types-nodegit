@@ -133,8 +133,8 @@ export class Diff {
      *
      */
     static blobToBuffer(oldBlob: Blob, oldAsPath: string,
-        buffer: string, bufferLength: number, bufferAsPath: string, opts: DiffOptions, fileCb: Function, binaryCb: Function, hunkCb: Function, lineCb: Function): Promise<any>;
-        static fromBuffer(content: string, contentLen: number): Promise<Diff>;
+                        buffer: string, bufferAsPath: string, opts: DiffOptions, fileCb: Function | null, binaryCb: Function | null, hunkCb: Function | null, lineCb: Function | null): Promise<any>;
+    static fromBuffer(content: string, contentLen: number): Promise<Diff>;
     static indexToWorkdir(repo: Repository, index: Index, opts?: DiffOptions): Promise<Diff>;
     static indexToIndex(repo: Repository, oldIndex: Index, newIndex: Index, opts?: DiffOptions): Promise<Diff>;
     static treeToIndex(repo: Repository, oldTree: Tree, index: Index, opts?: DiffOptions): Promise<Diff>;
