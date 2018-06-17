@@ -103,7 +103,7 @@ export class Commit {
      *
      *
      */
-    getDiffWithOptions(options: Object, callback?: Function): Promise<Diff[]>;
+    getDiffWithOptions(options: any, callback?: Function): Promise<Diff[]>;
     /**
      * The sha of this commit
      *
