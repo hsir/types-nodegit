@@ -23,6 +23,7 @@ export { Clone } from './clone';
 export { Commit } from './commit';
 export { Config } from './config';
 export { ConvenientHunk } from './convenient-hunk';
+export { DiffHunk } from './diff-hunk';
 export { ConvenientPatch } from './convenient-patch';
 export { CredUserpassPayload } from './cred-user-pass-payload';
 export { CredUsername } from './cred-username';
