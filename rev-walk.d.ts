@@ -19,7 +19,7 @@ export class Revwalk {
     hideHead(): number;
     hideRef(refname: string): number;
     next(): Promise<Oid>;
-    push(id: Oid): number;
+    push(id: Oid | string): number;
     pushGlob(glob: string): number;
     pushHead(): number;
     pushRange(range: string): number;
@@ -33,7 +33,7 @@ export class Revwalk {
      * Set the sort order for the revwalk. This function takes variable arguments like revwalk.sorting(NodeGit.RevWalk.Topological, NodeGit.RevWalk.Reverse).
      */
     sorting(sort: number): void;
-    fastWalk(maxCount: number): Promise<any>;
+    fastWalk(maxCount: number): Promise<Oid[]>;
     fileHistoryWalk(filePath: string, maxCount: number): Promise<any[]>;
     /**
      * Walk the history from the given oid. The callback is invoked for each commit; When the walk is over, the callback is invoked with (null, null).

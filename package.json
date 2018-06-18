@@ -1,29 +1,28 @@
 {
-  "_from": "@types/nodegit",
+  "_from": "git+https://github.com/hsir/types-nodegit.git",
   "_id": "@types/nodegit@0.18.7",
   "_inBundle": false,
-  "_integrity": "sha512-fanWL/CbtMU7ol0OPecr6nl7ZVS/NTHcrr/ru2iIxyRtwfrnL/tDmj+soMHeRBZg3IMPxwcDJHreQH9Q0TN3Gg==",
+  "_integrity": "sha1-AhIudQgX06UkUz8tQ89JRz8ngcA=",
   "_location": "/@types/nodegit",
   "_phantomChildren": {},
   "_requested": {
-    "type": "tag",
-    "registry": true,
-    "raw": "@types/nodegit",
+    "type": "git",
+    "raw": "@types/nodegit@git+https://github.com/hsir/types-nodegit.git",
     "name": "@types/nodegit",
     "escapedName": "@types%2fnodegit",
     "scope": "@types",
-    "rawSpec": "",
-    "saveSpec": null,
-    "fetchSpec": "latest"
+    "rawSpec": "git+https://github.com/hsir/types-nodegit.git",
+    "saveSpec": "git+https://github.com/hsir/types-nodegit.git",
+    "fetchSpec": "https://github.com/hsir/types-nodegit.git",
+    "gitCommittish": "master"
   },
   "_requiredBy": [
-    "#USER",
-    "/"
+    "#DEV:/"
   ],
-  "_resolved": "https://registry.npmjs.org/@types/nodegit/-/nodegit-0.18.7.tgz",
+  "_resolved": "git+https://github.com/hsir/types-nodegit.git#4f4ee47a11a2037d8f95a9628bd23018873166c7",
   "_shasum": "3f39fb0b1215c267b7de1f6ed72a80880364a466",
-  "_spec": "@types/nodegit",
-  "_where": "/Users/honey/projects",
+  "_spec": "@types/nodegit@git+https://github.com/hsir/types-nodegit.git",
+  "_where": "/Users/honeyhu/work/team/git-assistant",
   "bundleDependencies": false,
   "contributors": [
     {
