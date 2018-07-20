@@ -49,7 +49,7 @@ export namespace Merge {
 }
 
 export class Merge {
-    static merge(repo: Repository, theirHead: AnnotatedCommit, mergeOpts?: MergeOptions, checkoutOpts?: CheckoutOptions): any;
+    static merge(repo: Repository, theirHead: AnnotatedCommit, mergeOpts?: MergeOptions | null, checkoutOpts?: CheckoutOptions): any;
     static base(repo: Repository, one: Oid, two: Oid): Promise<Oid>;
     static bases(repo: Repository, one: Oid, two: Oid): Promise<Oidarray>;
     static commits(repo: Repository, ourCommit: Commit, theirCommit: Commit, options?: MergeOptions): any;

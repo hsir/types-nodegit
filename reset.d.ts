@@ -1,4 +1,5 @@
 import { AnnotatedCommit } from './annotated-commit';
+import { Commit } from './commit'
 import { Repository } from './repository';
 import { Object } from './object';
 import { Strarray } from './str-array';
@@ -16,7 +17,7 @@ export class Reset {
     /**
      * Look up a refs's commit.
      */
-    static reset(repo: Repository, target: Object, resetType: number, checkoutOpts: CheckoutOptions): Promise<number>;
+    static reset(repo: Repository, target: Object | Commit, resetType: number, checkoutOpts: CheckoutOptions): Promise<number>;
     /**
      * Look up a refs's commit.
      */

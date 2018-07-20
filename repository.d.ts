@@ -191,7 +191,7 @@ export class Repository {
     /**
      * Rebases a branch onto another branch
      */
-    rebaseBranches(branch: string, upstream: string, onto: string, signature: Signature, beforeNextFn: Function): Promise<Oid>;
+    rebaseBranches(branch: string, upstream: string, onto: string | null, signature: Signature, beforeNextFn: Function, releaseDataFn: Function): Promise<Oid>;
     continueRebase(signature: Signature, beforeNextFn: Function): Promise<Oid>;
     /**
      * Get the status of a repo to it's working directory

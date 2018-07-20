@@ -15,8 +15,8 @@ export class Config {
     static openDefault(): Promise<Config>;
     static findProgramdata(): Promise<Buf>;
 
-    getString(name: string): Promise<string>;
     getStringBuf(name: string): Promise<Buf>;
+    getString(name: string): Promise<string>;
     setInt64(name: string, value: number): number;
     setMultivar(name: string, regexp: string, value: string): number;
     setString(name: string, value: string): Promise<number>;

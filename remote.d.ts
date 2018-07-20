@@ -45,7 +45,7 @@ export class Remote {
     disconnect(): Promise<void>;
     download(refSpecs: any[], opts?: FetchOptions, callback?: Function): Promise<number>;
     dup(): Promise<Remote>;
-    fetch(refSpecs: any[], opts: FetchOptions, message: string, callback?: Function): Promise<number>;
+    fetch(refSpecs: any[] | null, opts: FetchOptions, message: string, callback?: Function): Promise<number>;
 
     free(): void;
     getFetchRefspecs(): Promise<any[]>;
@@ -55,7 +55,7 @@ export class Remote {
     owner(): Repository;
     prune(callbacks: RemoteCallbacks): number;
     pruneRefs(): number;
-    push(refSpecs: any[], options?: PushOptions, callback?: Function): Promise<number>;
+    push(refSpecs: any[] | string, options?: PushOptions, callback?: Function): Promise<number>;
     pushurl(): string;
     refspecCount(): number;
     stats(): TransferProgress;
