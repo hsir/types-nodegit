@@ -17,7 +17,7 @@ export class Reset {
     /**
      * Look up a refs's commit.
      */
-    static reset(repo: Repository, target: Object | Commit, resetType: number, checkoutOpts: CheckoutOptions): Promise<number>;
+    static reset(repo: Repository, target: Object | Commit, resetType: number, checkoutOpts?: CheckoutOptions): Promise<number>;
     /**
      * Look up a refs's commit.
      */
